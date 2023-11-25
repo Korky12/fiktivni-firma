@@ -1,13 +1,17 @@
-print("fiktivní Hra")
+import pygame
 
-#1-up 2-down
+pygame.init()
 
-userInput = input("""Vybuchly vsechny automobilky na svete a zbyla jenom tvoje, co udelas?
-      Zacnes vyrabet vic nebo min aut?: """).lower()
+screen_width = 800
+screen_height = 600
 
-if userInput == "vic":
-    print("test")
-elif userInput = "min"
+screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption("Fiktivní firma")
 
+run = True
+while run:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False 
 
-print("llol")
+pygame.quit()
